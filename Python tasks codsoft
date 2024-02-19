@@ -1,0 +1,40 @@
+TASK 2 : CALCULATOR
+Design a simple calculator with basic arithmetic operations.
+Prompt the user to input two numbers and an operation choice.
+Perform the calculation and display the result.
+
+Solution :-
+Here we are asked to design a calculator. So the code for the following will be as follows
+CODE:-
+def CALCULATOR():
+        print("   CALCULATOR   ")
+        first_no = float(input("Enter the first number"))
+        second_no = float(input("Enter the second number"))
+
+        Addition = first_no + second_no
+        Subtraction = first_no - second_no 
+        Multiplication = first_no * second_no
+        Division = round(first_no / second_no,2)
+
+        print("\nA. Addition")
+        print("S. Subtraction")
+        print("M. Multiplication")
+        print("D. Division")
+        print("CE. Clear Entry")
+
+        choice = input("Enter your choice: ")
+       
+        if choice == 'A':
+            print("The sum is",Addition)
+        elif choice == 'S':
+            print("The difference is",Subtraction)
+        elif choice == 'M':
+            print("The product is",Multiplication)
+        elif choice == 'D':
+            print("The Quotient is",Division)
+        elif choice == 'CE':
+            CALCULATOR()
+        else:
+            print("Invalid choice. Please try again.")
+        
+CALCULATOR()
